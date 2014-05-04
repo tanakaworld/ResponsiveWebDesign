@@ -46,3 +46,18 @@ hgroup h2, h4, h5, h6 {
     font-size: 16px;
     line-height: 1.5;
 }
+
+/* header */
+header {
+    text-align: center;
+    padding-top: 24px;
+    background: #211f1f;
+}
+
+header h1 {
+    margin-bottom: 24px;
+}
+
+header h2 {
+    color: #62240b;
+}
