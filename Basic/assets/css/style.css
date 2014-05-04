@@ -81,3 +81,14 @@ nav ul li {
     width: 25%;
     float: left
 }
+
+nav ul li a {
+    display: block;
+    color: #d8c2a4;
+    padding: 12px 0
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: #7d4934
+}
