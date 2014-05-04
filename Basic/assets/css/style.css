@@ -61,3 +61,23 @@ header h1 {
 header h2 {
     color: #62240b;
 }
+
+/* Navigation bar */
+nav {
+    margin-bottom: 24px;
+    background-color: #7D4934;
+    background: -moz-linear-gradient(top, rgba(125, 73, 52, 1) 0%, rgba(43, 21, 18, 1) 88%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(125, 73, 52, 1)), color-stop(88%, rgba(43, 21, 18, 1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(125, 73, 52, 1) 0%, rgba(43, 21, 18, 1) 88%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(125, 73, 52, 1) 0%, rgba(43, 21, 18, 1) 88%); /* Opera 11.10+ */
+    background: linear-gradient(to bottom, rgba(125, 73, 52, 1) 0%, rgba(43, 21, 18, 1) 88%); /* W3C */
+}
+
+nav ul {
+    overflow: hidden
+}
+
+nav ul li {
+    width: 25%;
+    float: left
+}
