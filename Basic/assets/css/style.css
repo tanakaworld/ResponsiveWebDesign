@@ -92,3 +92,20 @@ nav ul li a:hover {
     color: white;
     background-color: #7d4934
 }
+
+/* Main Contents */
+#contents {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#contents p {
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+#contents img {
+    margin-bottom: 24px;
+    box-shadow: 0 0 5px #2f1f1f;
+}
