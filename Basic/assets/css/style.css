@@ -47,7 +47,7 @@ hgroup h2, h4, h5, h6 {
     line-height: 1.5;
 }
 
-/* header */
+/* Header */
 header {
     text-align: center;
     padding-top: 24px;
@@ -108,4 +108,12 @@ nav ul li a:hover {
 #contents img {
     margin-bottom: 24px;
     box-shadow: 0 0 5px #2f1f1f;
+}
+
+/* Footer */
+footer {
+    color: white;
+    text-align: center;
+    padding: 24px 0;
+    background: url(../images/footer_bg.png);
 }
