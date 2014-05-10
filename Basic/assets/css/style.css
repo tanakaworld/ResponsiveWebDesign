@@ -1,70 +1,101 @@
 @charset "utf-8";
 
+/* @group Reset */
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
 ul, ol {
-    list-style: none;
+    list-style: none
 }
 
 img {
-    vertical-align: middle;
-    max-width: 100%;
+    vertical-align: middle
 }
+
+/* @end */
+
+/* @group Fluid-img */
+
+img {
+    max-width: 100%
+}
+
+/* @end */
+
+/* @group HTML */
 
 html {
     font-family: verdana, sans-serif;
     font-size: 100%;
     line-height: 1.5;
-    background: url(../images/960_grid_12_col.png) repeat-y top center;
+    background: url(../images/960_grid_12_col.png) repeat-y top center
 }
 
+/* @end */
+
+/* @group Heading */
+
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 24px;
+    margin-bottom: 24px
 }
 
 h1 {
     font-size: 48px;
-    line-height: 1;
+    line-height: 1
 }
+
+/* 48px */
 
 h2 {
     font-size: 36px;
-    line-height: 1.3333;
+    line-height: 1.3333
 }
+
+/* 48px */
 
 h3 {
     font-size: 24px;
-    line-height: 1;
+    line-height: 1
 }
+
+/* 24px */
 
 hgroup h2, h4, h5, h6 {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 16px; /* 16px */
+    line-height: 1.5
 }
 
-/* Header */
+/* 24px */
+
+/* @end */
+
+/* @group Header */
+
 header {
     text-align: center;
     padding-top: 24px;
-    background: #211f1f;
+    background: #211f1f
 }
 
 header h1 {
-    margin-bottom: 24px;
+    margin-bottom: 24px
 }
 
 header h2 {
-    color: #62240b;
+    color: #fff
 }
 
-/* Navigation bar */
+/* @end */
+
+/* @group Nav */
+
 nav {
     margin-bottom: 24px;
     background-color: #7D4934;
@@ -95,34 +126,85 @@ nav ul li a:hover {
     background-color: #7d4934
 }
 
-/* Main Contents */
+/* @end */
+
+/* @group Contents */
+
 #contents {
     width: 90%;
     margin: 0 auto;
-    text-align: center;
+    text-align: center
 }
 
 #contents p {
     margin-bottom: 24px;
-    text-align: left;
+    text-align: left
 }
 
 #contents img {
     margin-bottom: 24px;
-    box-shadow: 0 0 5px #2f1f1f;
+    box-shadow: 0 0 5px #2f1f1f
 }
 
-/* Footer */
+/* @end */
+
+/* @group Footer */
+
 footer {
+    padding: 24px 0;
     color: white;
     text-align: center;
-    padding: 24px 0;
-    background: url(../images/footer_bg.png);
+    background: url(../images/footer_bg.png)
 }
 
-/* Media Query */
+/* @end */
+
+/*768px*/
 @media screen and (min-width: 768px) {
+
     #contents {
-        text-align: left;
+        text-align: left
     }
+
+}
+
+/*1024px*/
+@media screen and (min-width: 1024px) {
+
+    /* @group Nav */
+    nav ul {
+        width: 960px; /* 960/1024 */
+        margin: 0 auto
+    }
+
+    /* @end */
+    /* @group Contents */
+    #contents {
+        overflow: hidden;
+        width: 960px
+    }
+
+    #contents #main,
+    #contents #sub {
+        float: left;
+        margin: 0 10px
+    }
+
+    #contents #main {
+        width: 620px
+    }
+
+    #contents #sub {
+        width: 300px
+    }
+
+    /* @end */
+    /* @group Footer */
+    footer {
+        width: 940px; /*940/1024*/
+        margin: 0 auto
+    }
+
+    /* @end */
+
 }
