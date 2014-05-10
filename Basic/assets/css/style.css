@@ -20,7 +20,9 @@ img {
 
 html {
     font-family: verdana, sans-serif;
+    font-size: 100%;
     line-height: 1.5;
+    background: url(../images/960_grid_12_col.png) repeat-y top center;
 }
 
 h1, h2, h3, h4, h5, h6 {
